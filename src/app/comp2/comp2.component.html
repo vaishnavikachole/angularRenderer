@@ -1,0 +1,12 @@
+
+<div class="card" style="width: 400px;height: 400px;margin:10px;padding:10px;" appTestdirective>
+    <h6>UserName:<span>{{userName}}</span></h6>
+    <!-- <input type="text" class="form-control" placeholder="update name" /><br> -->
+    <button class="btn btn-success btn btn-sm" style="display: flex; position:right;" (click)="clickMe()">update</button>
+     <br>
+    <button (click)="changeColor('red')">Red</button>&nbsp;&nbsp;
+    <button (click)="changeColor('green')">Green</button>
+    <br>
+    <ng-content></ng-content>
+</div>
+    

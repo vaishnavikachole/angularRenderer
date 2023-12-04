@@ -1,0 +1,19 @@
+<div class="page-area">
+    <h2>Home</h2>
+    <div #box style="border: 2px solid red; width:400px;" class="card">
+        <h3>Username is <span class="text-success">{{userName}}</span></h3>
+    </div>
+    <div class="card" style="width:500px;height:600px;margin: 20px;padding:10px;" appTestdirective>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-danger" (click)="changeChildProperty()">ChangeChildProperty</button><br><br>
+            <button class="btn btn-success" (click)="callChildMethod()">CallChildMethod</button><br><br>
+            <app-comp2>
+                <p #childCon>this is ng content paragraph</p>
+            </app-comp2>
+        </div>
+       
+    </div>
+</div>
+
+</div>
